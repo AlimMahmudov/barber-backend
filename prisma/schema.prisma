@@ -22,3 +22,11 @@ model Video {
   id Int @id @unique @default(autoincrement())
   youtube String
 }
+
+
+model Master {
+  id Int @id @unique @default(autoincrement())
+  human  String
+  photo   String
+  work   String
+}
