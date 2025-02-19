@@ -29,7 +29,7 @@ export class MasterService {
     if (!master) {
       return {
         status: HttpStatus.NOT_FOUND,
-        message: `стрижка с id ${id} не найдена`,
+        message: `Мастер с id ${id} не найдена`,
       };
     }
     return master;
