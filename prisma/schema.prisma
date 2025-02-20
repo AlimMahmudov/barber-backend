@@ -16,3 +16,9 @@ model Service {
   time   String
   price   String
 }
+
+
+model Video {
+  id Int @id @unique @default(autoincrement())
+  youtube String
+}
