@@ -15,12 +15,12 @@ import { UpdateServiceDto } from './dto/update-service.dto';
 export class ServiceController {
   constructor(private readonly serviceService: ServiceService) {}
 
-  @Post()
+  @Post('create')
   async create(@Body() createServiceDto: CreateServiceDto) {
     return await this.serviceService.create(createServiceDto);
   }
 
-  @Get()
+  @Get('get-all')
   async findAll() {
     return await this.serviceService.findAll();
   }
