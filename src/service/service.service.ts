@@ -30,7 +30,7 @@ export class ServiceService {
     if (!service) {
       return {
         status: HttpStatus.NOT_FOUND,
-        message: `Еда с id ${id} не найдена`,
+        message: `стрижка с id ${id} не найдена`,
       };
     }
     return service;
