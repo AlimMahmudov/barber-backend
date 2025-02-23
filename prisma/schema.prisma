@@ -37,3 +37,9 @@ model Shave {
   image   String
   price   String
 }
+
+
+model Watch {
+  id Int @id @unique @default(autoincrement())
+  oclock  String
+}
