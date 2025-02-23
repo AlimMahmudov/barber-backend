@@ -15,12 +15,12 @@ import { UpdateWatchDto } from './dto/update-watch.dto';
 export class WatchController {
   constructor(private readonly watchService: WatchService) {}
 
-  @Post()
+  @Post('create')
   async create(@Body() createWatchDto: CreateWatchDto) {
     return await this.watchService.create(createWatchDto);
   }
 
-  @Get()
+  @Get('get-all')
   async findAll() {
     return await this.watchService.findAll();
   }
