@@ -29,6 +29,9 @@ model Master {
   human  String
   photo   String
   work   String
+   description String  @default("Описание не задано") 
+  skills      String  @default("Навыки не заданы")   
+  rating      String  @default("Не оценено")  
 }
 
 model Shave {

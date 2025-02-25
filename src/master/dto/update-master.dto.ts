@@ -6,4 +6,7 @@ export class UpdateMasterDto extends PartialType(CreateMasterDto) {
   human: string;
   photo: string;
   work: string;
+  description: string;
+  skills: string;
+  rating: string;
 }

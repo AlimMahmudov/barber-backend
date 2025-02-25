@@ -9,4 +9,10 @@ export class CreateMasterDto {
   photo: string;
   @ApiProperty()
   work: string;
+  @ApiProperty()
+  description: string;
+  @ApiProperty()
+  skills: string;
+  @ApiProperty()
+  rating: string;
 }

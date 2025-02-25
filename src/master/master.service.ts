@@ -13,6 +13,9 @@ export class MasterService {
         human: createMasterDto.human,
         photo: createMasterDto.photo,
         work: createMasterDto.work,
+        description: createMasterDto.description,
+        skills: createMasterDto.skills,
+        rating: createMasterDto.rating,
       },
     });
     return { status: HttpStatus.CREATED, newMaster };
