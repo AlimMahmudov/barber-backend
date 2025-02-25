@@ -15,12 +15,12 @@ import { UpdateShaveDto } from './dto/update-shave.dto';
 export class ShaveController {
   constructor(private readonly shaveService: ShaveService) {}
 
-  @Post()
+  @Post('create')
   async create(@Body() createShaveDto: CreateShaveDto) {
     return await this.shaveService.create(createShaveDto);
   }
 
-  @Get()
+  @Get('get-all')
   async findAll() {
     return await this.shaveService.findAll();
   }
