@@ -46,3 +46,18 @@ model Watch {
   id Int @id @unique @default(autoincrement())
   oclock  String
 }
+
+
+model Send {
+  id Int @id @unique @default(autoincrement())
+  name  String
+  master   String
+  service   String
+  time   String
+  day   String
+  email   String
+  phone   String
+
+}
+
+ 
